@@ -1,7 +1,14 @@
-/**
- * @type {import('next').NextConfig}
- */
+// @ts-check
+import withSerwistInit from "@serwist/next";
 
+const withSerwist = withSerwistInit({
+  cacheOnNavigation: true,
+  swSrc: "src/app/sw.ts",
+  swDest: "public/sw.js",
+  disable: process.env.NODE_ENV === "development",
+});
+
+/** @type {import("next").NextConfig} */
 const nextConfig = {
   output: "standalone",
   images: {
@@ -9,4 +16,5 @@ const nextConfig = {
   },
   reactStrictMode: true,
 };
-export default nextConfig;
+
+export default withSerwist(nextConfig);
