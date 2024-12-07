@@ -7,7 +7,10 @@ This is a [Next.js](https://nextjs.org) project template made by [Me](https://gi
 - [x] Serwist for PWA support
 - [x] Sonner for toast notifications
 - [x] Docker support
-- [x] ShadCn as UI kit
+- [x] Shadcn as UI kit
+- [x] Dark mode toggle
+
+If you need to find pre-made components, you can use [Shadcn](https://shadcn.com) as a UI kit. It's a great tool to make your project look better and more professional. Make sure to also check out this amazing [website](https://awesome-shadcn-ui.vercel.app/) to find more components and examples.
 
 MAKE SURE TO COMPLETE THE TODO IN ORDER TO MAKE THE TEMPLATE AS YOUR OWN PROJECT
 

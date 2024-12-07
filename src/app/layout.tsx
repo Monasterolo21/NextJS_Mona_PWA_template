@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Toaster } from "sonner";
+import { ThemeProvider } from "@/components/theme-provider";
 
 // TODO: change metadata and favicon and REMEMER TO CHANGE ALSO THE ICONS IN PUBLIC FOLDER AND THE MANIFEST.JSON -> THE SIZE OF THE ICON SHOULD FOLLOW THE ONES IN THE EXAMPLE
 const APP_NAME = "NextJs_PWA Mona Example";
@@ -59,7 +60,14 @@ export default function RootLayout({
     <html lang="it">
       <body>
         <Toaster position="top-left" richColors closeButton visibleToasts={2} />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

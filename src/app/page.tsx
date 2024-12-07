@@ -1,4 +1,5 @@
 "use client";
+import { ModeToggle } from "@/components/dark-mode-toggle";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Button variant={"default"} onClick={showToast()}>
         Click me!
       </Button>
+      <ModeToggle />
     </div>
   );
 }
