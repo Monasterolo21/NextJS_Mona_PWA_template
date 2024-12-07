@@ -5,51 +5,60 @@
 /* TODO: change font */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/* TODO: change the colors, i personally use https://zippystarter.com/tools/shadcn-ui-theme-generator */
+/* TODO: change the colors, i personally use https://ui.jln.dev/ */
 @layer base {
   :root {
-    --background: 44 100% 95%;
-    --foreground: 44 5% 0%;
-    --card: 44 50% 90%;
-    --card-foreground: 44 5% 10%;
-    --popover: 44 100% 95%;
-    --popover-foreground: 44 100% 0%;
-    --primary: 44 70.4% 61.6%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 44 30% 70%;
-    --secondary-foreground: 0 0% 0%;
-    --muted: 6 30% 85%;
-    --muted-foreground: 44 5% 35%;
-    --accent: 6 30% 80%;
-    --accent-foreground: 44 5% 10%;
-    --destructive: 0 100% 30%;
-    --destructive-foreground: 44 5% 90%;
-    --border: 44 30% 50%;
-    --input: 44 30% 18%;
-    --ring: 44 70.4% 61.6%;
+    --background: 44 52% 99%;
+    --foreground: 44 76% 5%;
+    --muted: 44 20% 85%;
+    --muted-foreground: 44 12% 30%;
+    --popover: 44 52% 98%;
+    --popover-foreground: 44 76% 4%;
+    --card: 44 52% 98%;
+    --card-foreground: 44 76% 4%;
+    --border: 44 13% 94%;
+    --input: 44 13% 94%;
+    --primary: 44 100% 71%;
+    --primary-foreground: 44 100% 11%;
+    --secondary: 44 11% 88%;
+    --secondary-foreground: 44 11% 28%;
+    --accent: 44 18% 80%;
+    --accent-foreground: 44 18% 20%;
+    --destructive: 2 82% 39%;
+    --destructive-foreground: 2 82% 99%;
+    --ring: 44 100% 71%;
+    --chart-1: 44 100% 71%;
+    --chart-2: 44 11% 88%;
+    --chart-3: 44 18% 80%;
+    --chart-4: 44 11% 91%;
+    --chart-5: 44 103% 71%;
     --radius: 1rem;
   }
   .dark {
-    --background: 44 50% 5%;
-    --foreground: 44 5% 90%;
-    --card: 44 50% 0%;
-    --card-foreground: 44 5% 90%;
-    --popover: 44 50% 5%;
-    --popover-foreground: 44 5% 90%;
-    --primary: 44 70.4% 61.6%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 44 30% 10%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 6 30% 15%;
-    --muted-foreground: 44 5% 60%;
-    --accent: 6 30% 15%;
-    --accent-foreground: 44 5% 90%;
-    --destructive: 0 100% 30%;
-    --destructive-foreground: 44 5% 90%;
-    --border: 44 30% 18%;
-    --input: 44 30% 18%;
-    --ring: 44 70.4% 61.6%;
-    --radius: 1rem;
+    --background: 233 18% 19%;
+    --foreground: 173 24% 93%;
+    --muted: 233 12% 23%;
+    --muted-foreground: 233 12% 73%;
+    --popover: 233 18% 16%;
+    --popover-foreground: 0 0% 100%;
+    --card: 233 18% 17%;
+    --card-foreground: 173 24% 98%;
+    --border: 233 8% 24%;
+    --input: 233 8% 27%;
+    --primary: 44 100% 71%;
+    --primary-foreground: 44 100% 11%;
+    --secondary: 44 30% 25%;
+    --secondary-foreground: 44 30% 85%;
+    --accent: 233 18% 34%;
+    --accent-foreground: 233 18% 94%;
+    --destructive: 10 90% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 44 100% 71%;
+    --chart-1: 44 100% 71%;
+    --chart-2: 44 30% 25%;
+    --chart-3: 233 18% 34%;
+    --chart-4: 44 30% 28%;
+    --chart-5: 44 103% 71%;
   }
 }
 
