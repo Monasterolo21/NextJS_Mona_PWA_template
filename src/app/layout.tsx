@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Geist } from "next/font/google";
 
 // TODO: change metadata and favicon and REMEMER TO CHANGE ALSO THE ICONS IN PUBLIC FOLDER AND THE MANIFEST.JSON -> THE SIZE OF THE ICON SHOULD FOLLOW THE ONES IN THE EXAMPLE
 const APP_NAME = "NextJs_PWA Mona Example";
@@ -50,6 +51,11 @@ export const viewport: Viewport = {
   themeColor: "#FFFFFF",
 };
 
+// TODO: change the font
+const geist = Geist({
+  subsets: ["latin"],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,7 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     // TODO: change lang
-    <html lang="it">
+    <html lang="en" className={geist.className} suppressHydrationWarning>
       <body>
         <Toaster position="top-left" richColors closeButton visibleToasts={2} />
         <ThemeProvider

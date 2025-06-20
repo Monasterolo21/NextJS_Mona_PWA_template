@@ -2,10 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TODO: change font */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-/* TODO: change the colors, i personally use https://ui.jln.dev/ */
+/* TODO: change the colors, i personally use https://tweakcn.com/ */
 @layer base {
   :root {
     --background: 44 52% 99%;
@@ -78,9 +75,7 @@
   }
 }
 
-/* TODO: change font accordingly */
 body {
-  font-family: "Inter", sans-serif;
   height: -webkit-fill-available;
 }
 
